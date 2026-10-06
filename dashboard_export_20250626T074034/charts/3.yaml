@@ -1,0 +1,49 @@
+slice_name: "\u0421\u0440\u0435\u0434\u043D\u0435\u0435 \u043A\u043E\u043B\u0438\u0447\
+  \u0435\u0441\u0442\u0432\u043E \u0447\u043B\u0435\u043D\u043E\u0432 \u0441\u0435\
+  \u043C\u044C\u0438"
+description: null
+certified_by: null
+certification_details: null
+viz_type: big_number_total
+params:
+  datasource: 1__table
+  viz_type: big_number_total
+  metric:
+    expressionType: SQL
+    sqlExpression: AVG(CNT_MEM)
+    column: null
+    aggregate: null
+    datasourceWarning: false
+    hasCustomLabel: false
+    label: AVG(CNT_MEM)
+    optionName: metric_iuciesixmjf_ppcsxmrqjx
+  adhoc_filters: []
+  subheader: "\u0441\u0440\u0435\u0434\u043D\u0435\u0435 \u043A\u043E\u043B-\u0432\
+    \u043E \u0447\u043B\u0435\u043D\u043E\u0432 \u0441\u0435\u043C\u044C\u0438"
+  header_font_size: 0.4
+  subheader_font_size: 0.15
+  y_axis_format: SMART_NUMBER
+  time_format: smart_date
+  extra_form_data: {}
+  dashboards:
+  - 1
+query_context: "{\"datasource\":{\"id\":1,\"type\":\"table\"},\"force\":false,\"queries\"\
+  :[{\"filters\":[],\"extras\":{\"having\":\"\",\"where\":\"\"},\"applied_time_extras\"\
+  :{},\"columns\":[],\"metrics\":[{\"expressionType\":\"SQL\",\"sqlExpression\":\"\
+  AVG(CNT_MEM)\",\"column\":null,\"aggregate\":null,\"datasourceWarning\":false,\"\
+  hasCustomLabel\":false,\"label\":\"AVG(CNT_MEM)\",\"optionName\":\"metric_iuciesixmjf_ppcsxmrqjx\"\
+  }],\"annotation_layers\":[],\"series_limit\":0,\"order_desc\":true,\"url_params\"\
+  :{},\"custom_params\":{},\"custom_form_data\":{}}],\"form_data\":{\"datasource\"\
+  :\"1__table\",\"viz_type\":\"big_number_total\",\"metric\":{\"expressionType\":\"\
+  SQL\",\"sqlExpression\":\"AVG(CNT_MEM)\",\"column\":null,\"aggregate\":null,\"datasourceWarning\"\
+  :false,\"hasCustomLabel\":false,\"label\":\"AVG(CNT_MEM)\",\"optionName\":\"metric_iuciesixmjf_ppcsxmrqjx\"\
+  },\"adhoc_filters\":[],\"subheader\":\"\u0441\u0440\u0435\u0434\u043D\u0435\u0435\
+  \ \u043A\u043E\u043B-\u0432\u043E \u0447\u043B\u0435\u043D\u043E\u0432 \u0441\u0435\
+  \u043C\u044C\u0438\",\"header_font_size\":0.4,\"subheader_font_size\":0.15,\"y_axis_format\"\
+  :\"SMART_NUMBER\",\"time_format\":\"smart_date\",\"extra_form_data\":{},\"dashboards\"\
+  :[1],\"force\":false,\"result_format\":\"json\",\"result_type\":\"full\"},\"result_format\"\
+  :\"json\",\"result_type\":\"full\"}"
+cache_timeout: null
+uuid: d710d94a-03e7-4249-9151-41cf713218e1
+version: 1.0.0
+dataset_uuid: 7fcde64d-536d-4f3e-bdcb-8d047dd92d4a

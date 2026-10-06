@@ -1,0 +1,25 @@
+# Сырые исходные данные (конфиденциально, не публикуется)
+e_obr
+e_obr.csv
+e_obr.xlsx
+kezekte
+kezekte.csv
+kezekte.xlsx
+
+# Секреты / конфигурация окружения
+.env
+
+# Docker volumes (дампы БД, пересоздаются автоматически)
+clickhouse_data/
+superset_data/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db

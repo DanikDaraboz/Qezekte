@@ -1,0 +1,71 @@
+slice_name: "\u041F\u0440\u043E\u0441\u0440\u043E\u0447\u0435\u043D\u043D\u044B\u0435\
+  \ \u043E\u0431\u0440\u0430\u0449\u0435\u043D\u0438\u044F"
+description: null
+certified_by: null
+certification_details: null
+viz_type: big_number_total
+params:
+  datasource: 2__table
+  viz_type: big_number_total
+  metric:
+    expressionType: SQL
+    sqlExpression: "SUM(CASE WHEN status_overdue = '\u0417\u0430\u0432\u0435\u0440\
+      \u0448\u0435\u043D\u043E \u0441 \u043F\u0440\u043E\u0441\u0440\u043E\u0447\u043A\
+      \u043E\u0439' THEN 1 ELSE 0 END) / COUNT(appeal_id)"
+    column: null
+    aggregate: null
+    datasourceWarning: false
+    hasCustomLabel: false
+    label: "SUM(CASE WHEN status_overdue = '\u0417\u0430\u0432\u0435\u0440\u0448\u0435\
+      \u043D\u043E \u0441 \u043F\u0440\u043E\u0441\u0440\u043E\u0447\u043A\u043E\u0439\
+      ' THEN 1 ELSE 0 END) / COUNT(appeal_id)"
+    optionName: metric_nynoetu33pl_z4wspkyb8x
+  adhoc_filters:
+  - clause: WHERE
+    subject: start_dt
+    operator: TEMPORAL_RANGE
+    comparator: No filter
+    expressionType: SIMPLE
+  subheader: "\u043F\u0440\u043E\u0446\u0435\u043D\u0442 \u043F\u0440\u043E\u0441\u0440\
+    \u043E\u0447\u0435\u043D\u043D\u044B\u0445 \u043E\u0431\u0440\u0430\u0449\u0435\
+    \u043D\u0438\u0439"
+  header_font_size: 0.4
+  subheader_font_size: 0.15
+  y_axis_format: ',.1%'
+  time_format: smart_date
+  conditional_formatting: []
+  extra_form_data: {}
+  dashboards:
+  - 1
+query_context: "{\"datasource\":{\"id\":2,\"type\":\"table\"},\"force\":false,\"queries\"\
+  :[{\"filters\":[{\"col\":\"start_dt\",\"op\":\"TEMPORAL_RANGE\",\"val\":\"No filter\"\
+  }],\"extras\":{\"having\":\"\",\"where\":\"\"},\"applied_time_extras\":{},\"columns\"\
+  :[],\"metrics\":[{\"expressionType\":\"SQL\",\"sqlExpression\":\"SUM(CASE WHEN status_overdue\
+  \ = '\u0417\u0430\u0432\u0435\u0440\u0448\u0435\u043D\u043E \u0441 \u043F\u0440\u043E\
+  \u0441\u0440\u043E\u0447\u043A\u043E\u0439' THEN 1 ELSE 0 END) / COUNT(appeal_id)\"\
+  ,\"column\":null,\"aggregate\":null,\"datasourceWarning\":false,\"hasCustomLabel\"\
+  :false,\"label\":\"SUM(CASE WHEN status_overdue = '\u0417\u0430\u0432\u0435\u0440\
+  \u0448\u0435\u043D\u043E \u0441 \u043F\u0440\u043E\u0441\u0440\u043E\u0447\u043A\
+  \u043E\u0439' THEN 1 ELSE 0 END) / COUNT(appeal_id)\",\"optionName\":\"metric_nynoetu33pl_z4wspkyb8x\"\
+  }],\"annotation_layers\":[],\"series_limit\":0,\"order_desc\":true,\"url_params\"\
+  :{},\"custom_params\":{},\"custom_form_data\":{}}],\"form_data\":{\"datasource\"\
+  :\"2__table\",\"viz_type\":\"big_number_total\",\"metric\":{\"expressionType\":\"\
+  SQL\",\"sqlExpression\":\"SUM(CASE WHEN status_overdue = '\u0417\u0430\u0432\u0435\
+  \u0440\u0448\u0435\u043D\u043E \u0441 \u043F\u0440\u043E\u0441\u0440\u043E\u0447\
+  \u043A\u043E\u0439' THEN 1 ELSE 0 END) / COUNT(appeal_id)\",\"column\":null,\"aggregate\"\
+  :null,\"datasourceWarning\":false,\"hasCustomLabel\":false,\"label\":\"SUM(CASE\
+  \ WHEN status_overdue = '\u0417\u0430\u0432\u0435\u0440\u0448\u0435\u043D\u043E\
+  \ \u0441 \u043F\u0440\u043E\u0441\u0440\u043E\u0447\u043A\u043E\u0439' THEN 1 ELSE\
+  \ 0 END) / COUNT(appeal_id)\",\"optionName\":\"metric_nynoetu33pl_z4wspkyb8x\"},\"\
+  adhoc_filters\":[{\"clause\":\"WHERE\",\"subject\":\"start_dt\",\"operator\":\"\
+  TEMPORAL_RANGE\",\"comparator\":\"No filter\",\"expressionType\":\"SIMPLE\"}],\"\
+  subheader\":\"\u043F\u0440\u043E\u0446\u0435\u043D\u0442 \u043F\u0440\u043E\u0441\
+  \u0440\u043E\u0447\u0435\u043D\u043D\u044B\u0445 \u043E\u0431\u0440\u0430\u0449\u0435\
+  \u043D\u0438\u0439\",\"header_font_size\":0.4,\"subheader_font_size\":0.15,\"y_axis_format\"\
+  :\",.1%\",\"time_format\":\"smart_date\",\"conditional_formatting\":[],\"extra_form_data\"\
+  :{},\"dashboards\":[1],\"force\":false,\"result_format\":\"json\",\"result_type\"\
+  :\"full\"},\"result_format\":\"json\",\"result_type\":\"full\"}"
+cache_timeout: null
+uuid: 0aa50303-381e-44b3-92cc-057e6c2ae5be
+version: 1.0.0
+dataset_uuid: 490aa662-d921-4f1a-833b-d0fa343cd73f
