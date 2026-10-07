@@ -14,7 +14,6 @@ kezekte.xlsx
 # Local generated data
 dags/data/*.csv
 synthetic_*.csv
-dashboard.zip
 
 # Airflow local runtime
 airflow_db/
