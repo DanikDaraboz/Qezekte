@@ -6,8 +6,26 @@ kezekte
 kezekte.csv
 kezekte.xlsx
 
-# Секреты / конфигурация окружения
+# Environment
 .env
+.env.*
+.env.local
+
+# Local generated data
+dags/data/*.csv
+synthetic_*.csv
+dashboard.zip
+
+# Airflow local runtime
+airflow_db/
+logs/
+*.log
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
 
 # Docker volumes (дампы БД, пересоздаются автоматически)
 clickhouse_data/

@@ -14,7 +14,9 @@ services:
       - clickhouse_data:/var/lib/clickhouse
 
   superset:
-    image: apache/superset
+    build:
+      context: .
+      dockerfile: Dockerfile
     container_name: superset
     ports:
       - "8088:8088"
@@ -25,17 +27,31 @@ services:
     depends_on:
       - clickhouse
   airflow:
-    image: apache/airflow:2.9.1-python3.10
+    build:
+      context: .
+      dockerfile: Dockerfile.airflow
     container_name: airflow
     environment:
       - AIRFLOW__CORE__LOAD_EXAMPLES=False
       - AIRFLOW__CORE__EXECUTOR=SequentialExecutor
+      - CLICKHOUSE_USER=${CLICKHOUSE_USER}
+      - CLICKHOUSE_PASSWORD=${CLICKHOUSE_PASSWORD}
+      - CLICKHOUSE_HOST=clickhouse
+      - CLICKHOUSE_PORT=8123
     volumes:
       - ./dags:/opt/airflow/dags
+      - airflow_db:/opt/airflow
     ports:
       - "8081:8080"
-    command: standalone
+    command: >
+      bash -c "
+        airflow db migrate &&
+        airflow users create --username admin --firstname Admin --lastname Admin --role Admin --email admin@admin.com --password admin || true
+        airflow webserver &
+        airflow scheduler
+      "
 
 volumes:
   clickhouse_data:
   superset_home:
+  airflow_db:
