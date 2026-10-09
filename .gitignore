@@ -6,14 +6,10 @@ kezekte
 kezekte.csv
 kezekte.xlsx
 
-# Environment
+# Environment (шаблон остаётся в репозитории)
 .env
 .env.*
-.env.local
-
-# Local generated data
-dags/data/*.csv
-synthetic_*.csv
+!.env.example
 
 # Airflow local runtime
 airflow_db/
@@ -36,7 +32,3 @@ __pycache__/
 .venv/
 venv/
 .ipynb_checkpoints/
-
-# OS
-.DS_Store
-Thumbs.db
